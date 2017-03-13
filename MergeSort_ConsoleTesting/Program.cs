@@ -20,8 +20,8 @@ namespace MergeSort_ConsoleTesting
             int[] array_8elements_ReverseSorted = new int[8] { 8, 7, 6, 5, 4, 3, 2, 1 };
             int[] array_8elements_Sorted = new int[8] { 1, 2, 3, 4, 5, 6, 7, 8 };
             int[] array_8eelements_HasNegativeNumbers = new int[8] { 5, -1000, 1000, -1, 0, 1, -2, -100 };
-            //int[] array_1000elements = GenerateArray(1000);
-            //int[] array_1millionElements = GenerateArray(1000000);
+            int[] array_1000elements = GenerateArray(1000);
+            int[] array_1millionElements = GenerateArray(1000000);
 
             TestArrays.Add(array_1element);
             TestArrays.Add(array_2elements);
@@ -30,8 +30,8 @@ namespace MergeSort_ConsoleTesting
             TestArrays.Add(array_8elements_ReverseSorted);
             TestArrays.Add(array_8elements_Sorted);
             TestArrays.Add(array_8eelements_HasNegativeNumbers);
-            //TestArrays.Add(array_1000elements);
-            //TestArrays.Add(array_1millionElements);
+            TestArrays.Add(array_1000elements);
+            TestArrays.Add(array_1millionElements);
 
             PrintArrays(TestArrays, "Unsorted arrays: ");
 
