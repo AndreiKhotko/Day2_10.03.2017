@@ -25,7 +25,7 @@ namespace MergeSortNS
 
             while (j < L.Length && k < R.Length)
             {
-                if (L[j] <= R[k])
+                if (L[j] < R[k])
                 {
                     A[i++] = L[j++];
                 }
@@ -48,8 +48,13 @@ namespace MergeSortNS
         /// <param name="array"></param>
         public static void Sort(int[] array)
         {
-            int n = array.Length;
+            if (array == null)
+            {
+                throw new ArgumentNullException();
+            }
 
+            int n = array.Length;
+                        
             if (n < 2)
                 return;
 
